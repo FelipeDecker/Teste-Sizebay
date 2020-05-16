@@ -1266,6 +1266,17 @@
                 </span>
               </li>
             </ul>
+            <ul class="topic Tamanho productid-1202 numopt-4">
+              <li class="specification">
+                <span class="group_1">
+                  <button type="button" class="button_plugin link div-icon" style="display: inline;" onclick="ShowOdd()">
+                    <span class="group_1">
+                      Provador virtual
+                    </span>
+                  </button>
+                </span>
+              </li>
+            </ul>
           </div>
           <script>$('.sku-selector-container-0').skuSelector(skuJson_0, { selectSingleDimensionsOnOpening: 'true' });</script>
         </div><!-- END: Product skuSelection -->
@@ -1936,6 +1947,21 @@
   <script id="xcnt-pars" async="" src="index_files/www.js"></script>
   <script src="index_files/analytics" defer="true" async="true" type="text/javascript"></script>
   <script src="index_files/analytics_002" defer="true" async="true" type="text/javascript"></script>
+  <script lang="javascript">
+    var numbers = [0, 2, 3, 4, 5, 6, 7, 8, 9]
+    const odd = x => x % 2 != 0
+    const pair = x => x % 2 == 0
+
+    function ShowOdd() {
+        let odds = numbers.filter(odd)
+        alert(odds)
+    }
+
+    function ShowPair(){
+        let pairs = numbers.filter(pair)
+        alert(pairs)
+    }
+  </script>
 </body>
 
 </html>
